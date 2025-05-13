@@ -1,5 +1,9 @@
 import { useState } from "react";
 import words from "./wordList.json";
+import { HangmanWord } from "./components/HangmanWord";
+import { HangmanDrawing } from "./components/HangmanDrawing";
+import { Keyboard } from "./components/Keyboard";
+
 
 function App() {
   //
@@ -28,9 +32,9 @@ function App() {
       >
         Lose Win
       </div>
-      <HandmanDrawing/>
-      <HandmanWord/>
-      <Keyboard/>
+      <HangmanDrawing/>
+      {/* <HangmanWord/>
+      <Keyboard/> */}
 
     </div>
   );
